@@ -1,0 +1,441 @@
+Voltas AC 9092223748 may 01 2020
+Aqua AMC 73972442806 Prem kumar May 07 2020 --> one year amc with filter change
+7358336052 pastor david jayakumar
+
+sudo HTTP_PROXY=http://192.168.1.1:80/ docker pull busybox
+
+
+ibm
+ASSISTANT_APIKEY=Xeu5MyALtdXchRxn_xdcrkmutSs4v-zajVPJvzEaGz5t
+ASSISTANT_IAM_APIKEY=Xeu5MyALtdXchRxn_xdcrkmutSs4v-zajVPJvzEaGz5t
+ASSISTANT_URL=https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/23105fe1-9299-4c68-bcb0-692105960bbe
+ASSISTANT_AUTH_TYPE=iam
+
+
+after two month need to call him for regular checkup
+
+$ ps ax | grep firefox
+
+
+ifconfig
+sudo nmap -sn 192.168.1.0/24
+
+https://itsfoss.com/fix-sound-ubuntu-1304-quick-tip/
+
+cd ~/.wine/drive_c/RoadRash
+wineconsole RUN.BAT
+
+jupyter notebook
+
+scp
+
+folder remote to local
+scp -r jetson@192.168.1.7:/home/jetson/Desktop/tamil data
+
+local to remote
+scp file.txt remote_username@10.10.0.2:/remote/directory
+
+scp -r temp jetson@192.168.1.7:/home/jetson/Desktop/tamil 
+
+sudo ubuntu-drivers autoinstall
+
+android
+emulator -avd DassAndroid -netdelay none -netspeed full
+
+npm install -g create-react-native-app
+npm install -g react-native-cli
+
+create-react-native-app MyReactNative
+cd MyReactNative
+npm start
+npm run eject
+Though your project ejected successfully, you may get an error as −
+react-native run-android
+npm run android
+
+react-native link react-native-speech-recognizer
+
+dns
+sudo gedit /etc/resolv.conf
+change to super user
+sudo -i
+
+
+
+mongodb
+sudo apt-get install mongodb
+sudo apt-get update
+sudo service mongodb start
+mongo
+show dbs;
+use newdb; //create new database if it is not there
+db; //check current db
+db.mycollection.insert({"car" : "BMw"});
+show collections;
+db.mycollection.find();
+
+
+
+
+jetson
+https://www.youtube.com/watch?v=Ch1NKfER0oM
+
+
+https://medium.com/@vsimon/how-to-install-chrome-remote-desktop-on-ubuntu-18-04-52d99980d83e
+
+
+https://www.apronus.com/music/flashpiano.htm
+https://www.dummies.com/programming/python/performing-a-fast-fourier-transform-fft-on-a-sound-file/
+https://www.swharden.com/wp/2013-05-09-realtime-fft-audio-visualization-with-python/
+https://www.swharden.com/wp/2016-07-19-realtime-audio-visualization-in-python/
+
+https://stackoverflow.com/questions/31054437/how-to-install-wireshark-on-linux-and-capture-usb-traffic
+
+http://janaxelson.com/usbc.htm
+
+https://123movieshub.one/movie/madagascar-3-europes-most-wanted-2012/watching/?ep=3
+
+
+wget -c -O /home/dass/Downloads/angrybird2.mp4 https://fady41x.ostreamcdn.com/u5kj7ir6cdhlsdgge4agenamkfm2xj4ipx3km4z7hkiqi6mipo25r65dwt6a/v.mp4
+
+
+wget -c -O /home/dass/Downloads/peterrabbit.mp4 https://fs75.gounlimited.to/tea5ulmdlx2qzxfffoiibktv4ssacyng5va7ibllh5ji6t4qyoit4u6srqka/v.mp4
+
+ffmpeg -i Songs.mp4 songs2.mp3
+youtube-dl url
+
+sudo pip3 install --upgrade youtube_dl
+youtube-dl -x --audio-format mp3 https://youtu.be/Ongy28E6x3c
+youtube-dl -x -k https://www.youtube.com/watch?v=j_cm1vi1rXU
+
+ffplay -nodisp
+
+for f in *.mp3 ; do ffplay -nodisp -autoexit "$f"; done
+
+https://www.torrentfunk.com/all/torrents/udemy.html?v=&smi=&sma=&i=50&sort=seeds&o=desc
+
+
+==== PI install vscode
+wget https://github.com/stevedesmond-ca/vscode-arm/releases/download/1.28.2/vscode-1.28.2.deb
+sudo apt install ./vscode-1.28.2.deb
+
+https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/
+
+
+========PI bluetooth
+
+python3 -m pip install pybluez
+
+
+Thats because one of the dependencies is missing. Its also better that u download it and compile it from source. install mercurial
+
+sudo apt-get install mercurial
+
+the clone the source of gattlib
+
+hg clone https://bitbucket.org/OscarAcena/pygattlib
+cd pygattlib
+cat DEPENDS
+
+you need to install all those dependencies, the reason you getting that error is because you didn't install libboost-thread-dev.
+
+sudo apt-get install libboost-thread-dev
+
+now install gattlib like any other python module.
+
+sudo python setup.py install
+
+That should fix it. Thats how I install it on the RPi 3
+
+====
+sudo apt-get install libbluetooth-dev python-dev libglib2.0-dev libboost-python-dev libboost-thread-dev
+
+pip3 download gattlib
+tar xvzf ./gattlib-0.20150805.tar.gz
+cd gattlib-0.20150805/
+sed -ie 's/boost_python-py34/boost_python-py35/' setup.py
+pip3 install .
+
+sudo python3 -m pip install pybluez pybluez\[ble\]
+=====
+sudo apt-get update
+sudo apt-get install bluetooth
+sudo apt-get install bluez
+sudo apt-get install python-bluez
+==
+http://pages.iu.edu/~rwisman/c490/html/pythonandbluetooth.htm
+https://people.csail.mit.edu/albert/bluez-intro/x232.html
+https://electronicshobbyists.com/controlling-gpio-through-android-app-over-bluetooth-raspberry-pi-bluetooth-tutorial/
+
+==========
+https://github.com/pymupdf/PyMuPDF/wiki/How-to-extract-text-in-natural-reading-order-(up2down,-left2right)
+https://github.com/pymupdf/PyMuPDF/blob/master/demo/PDFdisplay.py
+=====
+Docker
+https://gist.github.com/bradtraversy/89fad226dc058a41b596d586022a9bd3
+
+docker container exec -it mynginx bash
+
+Show commands & management commands
+
+$ dockerNamed volumes (Add -v command)(the name here is mysql-db which could be anything)
+
+$ docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v mysql-db:/var/lib/mysql mysql
+
+Inspect new named volume
+
+docker volume inspect mysql-db
+
+
+Docker version info
+
+$ docker version
+
+Show info like number of containers, etc
+
+$ docker info
+
+WORKING WITH CONTAINERS
+Create an run a container in foreground
+
+$ docker container run -it -p 80:80 nginx
+
+Create an run a container in background
+
+$ docker container run -d -p 80:80 nginx
+
+Shorthand
+
+$ docker container run -d -p 80:80 nginx
+
+Naming Containers
+
+$ docker container run -d -p 80:80 --name nginx-server nginx
+
+List running containers
+
+$ docker container ls
+
+OR
+
+$ docker ps
+
+List all containers (Even if not running)
+
+$ docker container ls -a
+
+Stop container
+
+$ docker container stop [ID]
+
+Stop all running containers
+
+$ docker stop $(docker ps -aq)
+
+Remove container (Can not remove running containers, must stop first)
+
+$ docker container rm [ID]
+
+To remove a running container use force(-f)
+
+$ docker container rm -f [ID]
+
+Remove multiple containers
+
+$ docker container rm [ID] [ID] [ID]
+
+Remove all containers
+
+$ docker rm $(docker ps -aq)
+
+Get logs (Use name or ID)
+
+$ docker container logs [NAME]
+
+List processes running in container
+
+$ docker container top [NAME]
+
+List the images we have pulled
+
+$ docker image ls
+
+We can also just pull down images
+
+$ docker pull [IMAGE]
+
+Remove image
+
+$ docker image rm [IMAGE]
+
+Remove all images
+
+$ docker rmi $(docker images -a -q)
+
+NGINX:
+
+$ docker container run -d -p 80:80 --name nginx nginx (-p 80:80 is optional as it runs on 80 by default)
+
+APACHE:
+
+$ docker container run -d -p 8080:80 --name apache httpd
+
+MONGODB:
+
+$ docker container run -d -p 27017:27017 --name mongo mongo
+
+MYSQL:
+
+$ docker container run -d -p 3306:3306 --name mysql --env MYSQL_ROOT_PASSWORD=123456 mysql
+
+View info on container
+
+$ docker container inspect [NAME]
+
+Specific property (--format)
+
+$ docker container inspect --format '{{ .NetworkSettings.IPAddress }}' [NAME]
+
+Performance stats (cpu, mem, network, disk, etc)
+
+$ docker container stats [NAME]
+
+ACCESSING CONTAINERS
+Create new nginx container and bash into
+
+$ docker container run -it --name [NAME] nginx bash
+
+    i = interactive Keep STDIN open if not attached
+    t = tty - Open prompt
+
+For Git Bash, use "winpty"
+
+$ winpty docker container run -it --name [NAME] nginx bash
+
+Run/Create Ubuntu container
+
+$ docker container run -it --name ubuntu ubuntu
+
+
+ou can also make it so when you exit the container does not stay by using the -rm flag
+
+$ docker container run --rm -it --name [NAME] ubuntu
+
+Access an already created container, start with -ai
+
+$ docker container start -ai ubuntu
+
+Use exec to edit config, etc
+
+$ docker container exec -it mysql bash
+
+Alpine is a very small Linux distro good for docker
+
+$ docker container run -it alpine sh
+
+"bridge" or "docker0" is the default network
+Get port
+
+$ docker container port [NAME]
+
+List networks
+
+$ docker network ls
+
+Inspect network
+
+$ docker network inspect [NETWORK_NAME]
+("bridge" is default)
+
+Create network
+
+$ docker network create [NETWORK_NAME]
+
+Create container on network
+
+$ docker container run -d --name [NAME] --network [NETWORK_NAME] nginx
+
+Connect existing container to network
+
+$ docker network connect [NETWORK_NAME] [CONTAINER_NAME]
+
+Disconnect container from network
+
+$ docker network disconnect [NETWORK_NAME] [CONTAINER_NAME]
+
+Detach network from container
+
+$ docker network disconnect
+
+tags are labels that point ot an image ID
+
+$ docker image ls
+
+Youll see that each image has a tag
+Retag existing image
+
+$ docker image tag nginx btraversy/nginx
+
+Upload to dockerhub
+
+$ docker image push bradtraversy/nginx
+
+If denied, do
+
+$ docker login
+
+Add tag to new image
+
+$ docker image tag bradtraversy/nginx bradtraversy/nginx:testing
+
+Build image from Dockerfile
+
+$ docker image build -t nginx-website
+
+Running it
+
+$ docker container run -p 80:80 --rm nginx-website
+
+Tag and push to Dockerhub
+
+$ docker image tag nginx-website:latest btraversy/nginx-website:latest
+
+$ docker image push bradtraversy/nginx-website
+
+Check volumes
+
+$ docker volume ls
+
+Cleanup unused volumes
+
+$ docker volume prune
+
+Pull down mysql image to test
+
+$ docker pull mysql
+
+Inspect and see volume
+
+$ docker image inspect mysql
+
+Run container
+
+$ docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True mysql
+
+Inspect and see volume in container
+
+$ docker container inspect mysql
+
+Named volumes (Add -v command)(the name here is mysql-db which could be anything)
+
+$ docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v mysql-db:/var/lib/mysql mysql
+
+Inspect new named volume
+
+docker volume inspect mysql-db
+
+
+========
+sudo usermod -a -G vboxusers $USER
+//get all groups
+compgen -g
