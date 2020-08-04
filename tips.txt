@@ -2,6 +2,12 @@ Voltas AC 9092223748 may 01 2020
 Aqua AMC 73972442806 Prem kumar May 07 2020 --> one year amc with filter change
 7358336052 pastor david jayakumar
 
+
+Reliance digital
+sd11885953
+ph 9840904830
+
+
 sudo HTTP_PROXY=http://192.168.1.1:80/ docker pull busybox
 
 
@@ -34,13 +40,22 @@ scp -r jetson@192.168.1.7:/home/jetson/Desktop/tamil data
 
 local to remote
 scp file.txt remote_username@10.10.0.2:/remote/directory
+scp *.png pi@192.168.1.10:/home/pi/Desktop/Screenshot
 
 scp -r temp jetson@192.168.1.7:/home/jetson/Desktop/tamil 
+
+ssh chris@192.168.1.
+export DISPLAY=:0
+
 
 sudo ubuntu-drivers autoinstall
 
 android
 emulator -avd DassAndroid -netdelay none -netspeed full
+emulator -list-avds
+emulator -avd Pixel_2_API_28_2
+
+
 
 npm install -g create-react-native-app
 npm install -g react-native-cli
@@ -74,7 +89,13 @@ db.mycollection.insert({"car" : "BMw"});
 show collections;
 db.mycollection.find();
 
+hackathan
+api-champions
+selvgnb@rbos.co.uk
+https://developer.natwest.useinfinite.io/api-catalog/562939/specification
 
+npx react-native run-android
+dass@Dass-PC:~/Android/Sdk/emulator$ ./emulator -avd Pixel_2_API_28_2
 
 
 jetson
