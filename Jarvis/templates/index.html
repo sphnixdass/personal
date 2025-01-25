@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jarvis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Dass Jarvis</h1>
+    
+    <div id="chat-container"></div>
+
+    <div class="chatBot">
+        <header>
+            <h2>Jarvis</h2>
+            <span alt="Close" 
+                  id="cross" 
+                  onclick="cancel()">X</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat-incoming chat">
+                <p>Hey! How can I assist you today?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea id="inputTextbox" rows="0" cols="17"
+                      placeholder="Enter a message..."></textarea>
+            <button id="sendBTN">Send</button>
+            <button id="speechInputBTN">SpeachInput</button>
+            <button id="clearBTN">Clear</button>
+            <button id="stopAudioBTN">StopAudio</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

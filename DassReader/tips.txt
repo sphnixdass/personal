@@ -1,0 +1,4 @@
+google-chrome --remote-debugging-port=9222
+cd "~/Documents/Python/DassReader"
+uvicorn app:app --reload --host 0.0.0.0 --port 8000
+python3 dassReader.py 

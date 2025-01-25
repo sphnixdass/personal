@@ -1,0 +1,36 @@
+docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+docker exec -it ollama ollama run llama3
+docker exec -it ollama ollama run llama3.2
+docker exec -it ollama ollama run llama3.2-vision
+
+
+https://github.com/ollama/ollama
+https://hub.docker.com/r/ollama/ollama
+
+https://github.com/ollama/ollama/blob/main/docs/api.md
+
+
+docker start ollama
+docker exec -it ollama bash
+cd "/usr/bin"
+
+root@6f02692bc1db:/usr/bin# nano Modelfile
+root@6f02692bc1db:/usr/bin# ollama create jarvis -f ./Modelfile 
+docker exec -it ollama ollama run jarvis
+
+docker run -d -p 3000:8080 --gpus all -e OLLAMA_BASE_URL=http://localhost:11434 -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+
+http://localhost:11434/api/tags
+
+
+curl -X DELETE http://localhost:11434/api/delete -d '{
+  "model": "jarvis"
+}'
+
+ollama rm jarvis
+/home/dass/Documents/Python/Jarvis/ModelfileJarvis
+ollama create jarvis -f ./ModelfileJarvis
+
+
+
+python3 JarvisApp.py 
